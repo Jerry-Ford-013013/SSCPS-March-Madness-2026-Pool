@@ -1,0 +1,288 @@
+{
+  "pool_name": "March Madness Pool 2026",
+  "pick_deadline": "2026-03-19T12:00:00-04:00",
+  "scoring": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "regions": {
+    "East": [
+      {
+        "seed": 1,
+        "name": "Duke"
+      },
+      {
+        "seed": 16,
+        "name": "Siena"
+      },
+      {
+        "seed": 8,
+        "name": "Ohio State"
+      },
+      {
+        "seed": 9,
+        "name": "TCU"
+      },
+      {
+        "seed": 5,
+        "name": "St. John's"
+      },
+      {
+        "seed": 12,
+        "name": "N. Iowa"
+      },
+      {
+        "seed": 4,
+        "name": "Kansas"
+      },
+      {
+        "seed": 13,
+        "name": "Cal Baptist"
+      },
+      {
+        "seed": 6,
+        "name": "Louisville"
+      },
+      {
+        "seed": 11,
+        "name": "South Florida"
+      },
+      {
+        "seed": 3,
+        "name": "Michigan St"
+      },
+      {
+        "seed": 14,
+        "name": "N. Dakota St"
+      },
+      {
+        "seed": 7,
+        "name": "UCLA"
+      },
+      {
+        "seed": 10,
+        "name": "UCF"
+      },
+      {
+        "seed": 2,
+        "name": "UConn"
+      },
+      {
+        "seed": 15,
+        "name": "Furman"
+      }
+    ],
+    "West": [
+      {
+        "seed": 1,
+        "name": "Arizona"
+      },
+      {
+        "seed": 16,
+        "name": "LIU"
+      },
+      {
+        "seed": 8,
+        "name": "Villanova"
+      },
+      {
+        "seed": 9,
+        "name": "Utah St"
+      },
+      {
+        "seed": 5,
+        "name": "Wisconsin"
+      },
+      {
+        "seed": 12,
+        "name": "High Point"
+      },
+      {
+        "seed": 4,
+        "name": "Arkansas"
+      },
+      {
+        "seed": 13,
+        "name": "Hawaii"
+      },
+      {
+        "seed": 6,
+        "name": "BYU"
+      },
+      {
+        "seed": 11,
+        "name": "Tex/NCST"
+      },
+      {
+        "seed": 3,
+        "name": "Gonzaga"
+      },
+      {
+        "seed": 14,
+        "name": "Kennesaw St"
+      },
+      {
+        "seed": 7,
+        "name": "Miami"
+      },
+      {
+        "seed": 10,
+        "name": "Missouri"
+      },
+      {
+        "seed": 2,
+        "name": "Purdue"
+      },
+      {
+        "seed": 15,
+        "name": "Queens"
+      }
+    ],
+    "South": [
+      {
+        "seed": 1,
+        "name": "Florida"
+      },
+      {
+        "seed": 16,
+        "name": "PVAM/LEH"
+      },
+      {
+        "seed": 8,
+        "name": "Clemson"
+      },
+      {
+        "seed": 9,
+        "name": "Iowa"
+      },
+      {
+        "seed": 5,
+        "name": "Vanderbilt"
+      },
+      {
+        "seed": 12,
+        "name": "McNeese"
+      },
+      {
+        "seed": 4,
+        "name": "Nebraska"
+      },
+      {
+        "seed": 13,
+        "name": "Troy"
+      },
+      {
+        "seed": 6,
+        "name": "N. Carolina"
+      },
+      {
+        "seed": 11,
+        "name": "VCU"
+      },
+      {
+        "seed": 3,
+        "name": "Illinois"
+      },
+      {
+        "seed": 14,
+        "name": "U Penn"
+      },
+      {
+        "seed": 7,
+        "name": "Saint Mary's"
+      },
+      {
+        "seed": 10,
+        "name": "Texas A&M"
+      },
+      {
+        "seed": 2,
+        "name": "Houston"
+      },
+      {
+        "seed": 15,
+        "name": "Idaho"
+      }
+    ],
+    "Midwest": [
+      {
+        "seed": 1,
+        "name": "Michigan"
+      },
+      {
+        "seed": 16,
+        "name": "UMBC/HOW"
+      },
+      {
+        "seed": 8,
+        "name": "Georgia"
+      },
+      {
+        "seed": 9,
+        "name": "Saint Louis"
+      },
+      {
+        "seed": 5,
+        "name": "Texas Tech"
+      },
+      {
+        "seed": 12,
+        "name": "Akron"
+      },
+      {
+        "seed": 4,
+        "name": "Alabama"
+      },
+      {
+        "seed": 13,
+        "name": "Hofstra"
+      },
+      {
+        "seed": 6,
+        "name": "Tennessee"
+      },
+      {
+        "seed": 11,
+        "name": "M-OH/SMU"
+      },
+      {
+        "seed": 3,
+        "name": "Virginia"
+      },
+      {
+        "seed": 14,
+        "name": "Wright St"
+      },
+      {
+        "seed": 7,
+        "name": "Kentucky"
+      },
+      {
+        "seed": 10,
+        "name": "Santa Clara"
+      },
+      {
+        "seed": 2,
+        "name": "Iowa St"
+      },
+      {
+        "seed": 15,
+        "name": "Tennessee St"
+      }
+    ]
+  },
+  "final_four_matchups": {
+    "semifinal1": [
+      "East",
+      "West"
+    ],
+    "semifinal2": [
+      "South",
+      "Midwest"
+    ]
+  }
+}
