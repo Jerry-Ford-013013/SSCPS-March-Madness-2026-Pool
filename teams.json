@@ -21,7 +21,7 @@
       },
       {
         "seed": 8,
-        "name": "Ohio State"
+        "name": "Ohio St"
       },
       {
         "seed": 9,
@@ -278,10 +278,10 @@
   "final_four_matchups": {
     "semifinal1": [
       "East",
-      "West"
+      "South"
     ],
     "semifinal2": [
-      "South",
+      "West",
       "Midwest"
     ]
   }
