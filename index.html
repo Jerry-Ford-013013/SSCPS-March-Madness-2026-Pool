@@ -417,43 +417,6 @@ body::before {
 .submit-status.success { color: var(--green); }
 .submit-status.error { color: var(--red); }
 
-
-.action-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.secondary-btn {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 1rem 2rem;
-  background: transparent;
-  color: var(--accent-silver-bright);
-  border: 1px solid var(--border-light);
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.secondary-btn:hover {
-  border-color: var(--accent-blue);
-  color: var(--text-primary);
-  box-shadow: 0 0 15px var(--accent-blue-glow);
-  transform: translateY(-2px);
-}
-
-.secondary-btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
-  box-shadow: none;
-}
-
 /* Leaderboard */
 .leaderboard-table {
   width: 100%;
@@ -549,8 +512,6 @@ body::before {
   .entry-fields { grid-template-columns: 1fr; }
   .round { min-width: 150px; }
   .team-slot { font-size: 0.75rem; padding: 0.35rem 0.5rem; }
-  .action-buttons { flex-direction: column; }
-  .action-buttons button { width: 100%; }
 }
 
 /* Animations */
@@ -643,10 +604,7 @@ body::before {
   </div>
 
   <div class="submit-section" id="submitSection">
-    <div class="action-buttons">
-      <button class="secondary-btn" id="printBtn" onclick="printBracket()">Print / Save PDF</button>
-      <button class="submit-btn" id="submitBtn" onclick="submitPicks()">Submit Bracket</button>
-    </div>
+    <button class="submit-btn" id="submitBtn" onclick="submitPicks()">Submit Bracket</button>
     <div class="submit-status" id="submitStatus"></div>
   </div>
 </div>
@@ -671,7 +629,7 @@ body::before {
 // CONFIGURATION - UPDATE THESE
 // ============================================================
 // Replace with your actual Google Apps Script Web App URL after setup
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyiPNskSn3q4ZthavhvTiGJw4btV-rDhGYQBuaBQMklz9RxyXVKdO_AZhJjzrKzkD9KXA/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyC0JZTwzNcAmOnnMq1sDgWMmosufYmnxpahiISFdvhmF7aQjM0TQXtZCTZomDFOQIL/exec';
 
 // ============================================================
 // STATE
@@ -680,94 +638,6 @@ let CONFIG = {};
 let RESULTS = {};
 let PICKS = {};  // user's picks: { gameId: teamName }
 let TEAMS_BY_REGION = {};
-
-const SAVE_KEY = 'march_madness_pool_2026_draft';
-
-function saveDraft() {
-  const draft = {
-    entrantName: document.getElementById('entrantName')?.value || '',
-    entryName: document.getElementById('entryName')?.value || '',
-    tiebreaker: document.getElementById('tiebreakerInput')?.value || '',
-    picks: PICKS
-  };
-  localStorage.setItem(SAVE_KEY, JSON.stringify(draft));
-}
-
-function clearDraft() {
-  localStorage.removeItem(SAVE_KEY);
-}
-
-function attachDraftListeners() {
-  ['entrantName', 'entryName', 'tiebreakerInput'].forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.addEventListener('input', saveDraft);
-  });
-}
-
-function getPickSortValue(gameId) {
-  if (gameId === 'FF-CHAMP') return 9999;
-
-  let m = gameId.match(/^(East|West|South|Midwest)-R(\d)-M(\d)$/);
-  if (m) return parseInt(m[2], 10) * 100 + parseInt(m[3], 10);
-
-  m = gameId.match(/^FF-R(\d)-M(\d)$/);
-  if (m) return 1000 + parseInt(m[1], 10) * 100 + parseInt(m[2], 10);
-
-  return 99999;
-}
-
-function restoreDraft() {
-  const raw = localStorage.getItem(SAVE_KEY);
-  if (!raw) return;
-
-  try {
-    const draft = JSON.parse(raw);
-
-    const entrantEl = document.getElementById('entrantName');
-    const entryEl = document.getElementById('entryName');
-    const tieEl = document.getElementById('tiebreakerInput');
-
-    if (entrantEl) entrantEl.value = draft.entrantName || '';
-    if (entryEl) entryEl.value = draft.entryName || '';
-    if (tieEl) tieEl.value = draft.tiebreaker || '';
-
-    const savedPicks = draft.picks || {};
-    PICKS = {};
-
-    Object.entries(savedPicks)
-      .sort((a, b) => getPickSortValue(a[0]) - getPickSortValue(b[0]))
-      .forEach(([gameId, team]) => {
-        if (!team || !team.name || gameId === 'FF-CHAMP') return;
-
-        if (gameId.startsWith('FF-')) {
-          const match = gameId.match(/^FF-R(\d)-M(\d)$/);
-          if (!match) return;
-
-          const round = parseInt(match[1], 10);
-          const matchNum = parseInt(match[2], 10);
-          const ffContainer = document.getElementById('picks-final-four');
-          if (!ffContainer) return;
-          const slots = Array.from(ffContainer.querySelectorAll('[data-game-id="' + gameId + '"]'));
-          const teamIdx = slots.findIndex(s => s.dataset.teamName === team.name);
-          if (teamIdx >= 0) pickFinalFour(round, matchNum, teamIdx, team);
-        } else {
-          const match = gameId.match(/^(.+)-R(\d)-M(\d)$/);
-          if (!match) return;
-
-          const region = match[1];
-          const round = parseInt(match[2], 10);
-          const matchNum = parseInt(match[3], 10);
-          const regionDiv = document.getElementById('picks-region-' + region);
-          if (!regionDiv) return;
-          const slots = Array.from(regionDiv.querySelectorAll('[data-game-id="' + gameId + '"]'));
-          const teamIdx = slots.findIndex(s => s.dataset.teamName === team.name);
-          if (teamIdx >= 0) pickTeam(region, round, matchNum, teamIdx, team);
-        }
-      });
-  } catch (err) {
-    console.error('Could not restore saved draft:', err);
-  }
-}
 
 // ============================================================
 // INITIALIZATION
@@ -791,8 +661,6 @@ async function init() {
     buildPicksBracket();
     buildResultsBracket();
     renderLeaderboard(leaderboardData);
-    attachDraftListeners();
-    restoreDraft();
 
     if (resultsData.last_updated) {
       document.getElementById('resultsUpdated').textContent =
@@ -962,8 +830,6 @@ function pickTeam(region, round, match, teamIdx, team) {
     // Advance to Final Four
     advanceToFinalFour(region, team);
   }
-
-  saveDraft();
 }
 
 function clearDownstream(region, round, match, slotIdx, newTeam) {
@@ -1134,8 +1000,6 @@ function pickFinalFour(round, match, teamIdx, team) {
       champSlot.style.boxShadow = '0 0 15px rgba(37, 99, 235, 0.3)';
     }
   }
-
-  saveDraft();
 }
 
 // ============================================================
@@ -1337,7 +1201,6 @@ async function submitPicks() {
       showToast('Bracket submitted successfully!', 'success');
       statusEl.textContent = 'Your bracket "' + entryName + '" has been submitted!';
       statusEl.className = 'submit-status success';
-      clearDraft();
     }
   } catch (err) {
     showToast('Error submitting. Please try again.', 'error');
@@ -1347,114 +1210,6 @@ async function submitPicks() {
     submitBtn.disabled = false;
     submitBtn.textContent = 'Submit Bracket';
   }
-}
-
-// ============================================================
-// PRINT / PDF EXPORT
-// ============================================================
-
-function getPrintableRounds() {
-  const sections = [
-    { title: 'East Region', games: [] },
-    { title: 'West Region', games: [] },
-    { title: 'South Region', games: [] },
-    { title: 'Midwest Region', games: [] },
-    { title: 'Final Four', games: [] }
-  ];
-
-  const regionOrder = ['East', 'West', 'South', 'Midwest'];
-  regionOrder.forEach((region, idx) => {
-    for (let round = 0; round <= 3; round++) {
-      const roundGames = Object.entries(PICKS)
-        .filter(([gameId, team]) => gameId.startsWith(region + '-R' + round + '-') && team && team.name)
-        .sort((a, b) => {
-          const ma = parseInt(a[0].split('-M')[1], 10);
-          const mb = parseInt(b[0].split('-M')[1], 10);
-          return ma - mb;
-        })
-        .map(([gameId, team], i) => `${ROUND_NAMES[round]} ${i + 1}: (${team.seed}) ${team.name}`);
-      sections[idx].games.push(...roundGames);
-    }
-  });
-
-  ['FF-R0-M0', 'FF-R0-M1', 'FF-R1-M0', 'FF-CHAMP'].forEach((gameId, idx) => {
-    const team = PICKS[gameId];
-    if (!team || !team.name) return;
-    const labels = ['Semifinal 1', 'Semifinal 2', 'Championship', 'Champion'];
-    sections[4].games.push(labels[idx] + ': (' + team.seed + ') ' + team.name);
-  });
-
-  return sections;
-}
-
-function printBracket() {
-  const entrantName = document.getElementById('entrantName').value.trim() || 'Unnamed Entrant';
-  const entryName = document.getElementById('entryName').value.trim() || 'Untitled Bracket';
-  const tiebreaker = document.getElementById('tiebreakerInput').value.trim() || '-';
-  const sections = getPrintableRounds();
-
-  const completedPicks = Object.keys(PICKS).filter(k => PICKS[k] && PICKS[k].name).length;
-  if (completedPicks === 0) {
-    showToast('Make at least one pick before printing.', 'error');
-    return;
-  }
-
-  const printWindow = window.open('', '_blank', 'width=1100,height=850');
-  if (!printWindow) {
-    showToast('Pop-up blocked. Please allow pop-ups for printing.', 'error');
-    return;
-  }
-
-  const sectionsHtml = sections.map(section => {
-    const gamesHtml = section.games.length
-      ? '<ul>' + section.games.map(g => '<li>' + escapeHtml(g) + '</li>').join('') + '</ul>'
-      : '<p class="empty">No picks yet.</p>';
-    return '<div class="print-card"><h2>' + escapeHtml(section.title) + '</h2>' + gamesHtml + '</div>';
-  }).join('');
-
-  const poolName = escapeHtml(CONFIG.pool_name || 'March Madness Pool 2026');
-  const generatedAt = new Date().toLocaleString();
-
-  printWindow.document.write(`<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>${poolName} - ${escapeHtml(entryName)}</title>
-<style>
-body { font-family: Arial, sans-serif; margin: 24px; color: #111827; }
-h1 { margin: 0 0 6px; font-size: 28px; }
-.subtitle { margin-bottom: 20px; color: #475569; }
-.meta { display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 10px; margin-bottom: 24px; }
-.meta div { padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: #f8fafc; }
-.grid { display: grid; grid-template-columns: repeat(2, minmax(260px, 1fr)); gap: 16px; }
-.print-card { border: 1px solid #cbd5e1; border-radius: 10px; padding: 14px 16px; break-inside: avoid; }
-h2 { margin: 0 0 10px; font-size: 18px; }
-ul { margin: 0; padding-left: 18px; }
-li { margin: 0 0 6px; }
-.empty { color: #64748b; font-style: italic; }
-.footer { margin-top: 24px; color: #64748b; font-size: 12px; }
-@media print {
-  body { margin: 16px; }
-  .no-print { display: none; }
-}
-</style>
-</head>
-<body>
-  <div class="no-print" style="margin-bottom:16px;"><button onclick="window.print()" style="padding:10px 14px; cursor:pointer;">Print / Save as PDF</button></div>
-  <h1>${poolName}</h1>
-  <div class="subtitle">Bracket summary for ${escapeHtml(entryName)}</div>
-  <div class="meta">
-    <div><strong>Entrant:</strong> ${escapeHtml(entrantName)}</div>
-    <div><strong>Entry Name:</strong> ${escapeHtml(entryName)}</div>
-    <div><strong>Tiebreaker:</strong> ${escapeHtml(tiebreaker)}</div>
-    <div><strong>Generated:</strong> ${escapeHtml(generatedAt)}</div>
-  </div>
-  <div class="grid">${sectionsHtml}</div>
-  <div class="footer">This PDF reflects the picks currently visible in your browser.</div>
-</body>
-</html>`);
-  printWindow.document.close();
-  printWindow.focus();
 }
 
 // ============================================================
