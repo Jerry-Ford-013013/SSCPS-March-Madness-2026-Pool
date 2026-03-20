@@ -1,4 +1,101 @@
 {
-  "results": {},
-  "last_updated": ""
+  "results": {
+    "East-R0-M0": {
+      "winner": "Duke",
+      "team1": "Duke",
+      "team2": "Siena",
+      "entered_at": "2026-03-20T08:52:42.844697"
+    },
+    "East-R0-M1": {
+      "winner": "TCU",
+      "team1": "Ohio St",
+      "team2": "TCU",
+      "entered_at": "2026-03-20T08:52:44.486046"
+    },
+    "East-R0-M4": {
+      "winner": "Louisville",
+      "team1": "Louisville",
+      "team2": "South Florida",
+      "entered_at": "2026-03-20T08:52:52.998193"
+    },
+    "East-R0-M5": {
+      "winner": "Michigan St",
+      "team1": "Michigan St",
+      "team2": "N. Dakota St",
+      "entered_at": "2026-03-20T08:52:56.661848"
+    },
+    "South-R0-M2": {
+      "winner": "Vanderbilt",
+      "team1": "Vanderbilt",
+      "team2": "McNeese",
+      "entered_at": "2026-03-20T08:53:24.818734"
+    },
+    "South-R0-M3": {
+      "winner": "Nebraska",
+      "team1": "Nebraska",
+      "team2": "Troy",
+      "entered_at": "2026-03-20T08:53:26.318829"
+    },
+    "South-R0-M4": {
+      "winner": "VCU",
+      "team1": "N. Carolina",
+      "team2": "VCU",
+      "entered_at": "2026-03-20T08:53:28.373974"
+    },
+    "South-R0-M6": {
+      "winner": "Texas A&M",
+      "team1": "Saint Mary's",
+      "team2": "Texas A&M",
+      "entered_at": "2026-03-20T08:53:41.505960"
+    },
+    "South-R0-M7": {
+      "winner": "Houston",
+      "team1": "Houston",
+      "team2": "Idaho",
+      "entered_at": "2026-03-20T08:53:46.320540"
+    },
+    "South-R0-M5": {
+      "winner": "Illinois",
+      "team1": "Illinois",
+      "team2": "U Penn",
+      "entered_at": "2026-03-20T08:54:17.678422"
+    },
+    "West-R0-M2": {
+      "winner": "High Point",
+      "team1": "Wisconsin",
+      "team2": "High Point",
+      "entered_at": "2026-03-20T08:54:32.630536"
+    },
+    "West-R0-M3": {
+      "winner": "Arkansas",
+      "team1": "Arkansas",
+      "team2": "Hawaii",
+      "entered_at": "2026-03-20T08:54:36.391655"
+    },
+    "West-R0-M4": {
+      "winner": "Tex/NCST",
+      "team1": "BYU",
+      "team2": "Tex/NCST",
+      "entered_at": "2026-03-20T08:54:38.122451"
+    },
+    "West-R0-M5": {
+      "winner": "Gonzaga",
+      "team1": "Gonzaga",
+      "team2": "Kennesaw St",
+      "entered_at": "2026-03-20T08:54:39.774910"
+    },
+    "Midwest-R0-M0": {
+      "winner": "Michigan",
+      "team1": "Michigan",
+      "team2": "UMBC/HOW",
+      "entered_at": "2026-03-20T08:54:52.276008"
+    },
+    "Midwest-R0-M1": {
+      "winner": "Saint Louis",
+      "team1": "Georgia",
+      "team2": "Saint Louis",
+      "entered_at": "2026-03-20T08:54:55.541621"
+    }
+  },
+  "last_updated": "2026-03-20T08:55:08.072985"
 }
