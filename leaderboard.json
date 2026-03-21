@@ -1,52 +1,10 @@
 {
   "entries": [
     {
-      "entry_name": "Lousy Smarch Madness",
-      "total": 12,
-      "round_scores": [
-        12,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 128,
-      "possible_points": 188
-    },
-    {
-      "entry_name": "Riff Ram Bah Zoo",
-      "total": 12,
-      "round_scores": [
-        12,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 133,
-      "possible_points": 188
-    },
-    {
-      "entry_name": "Steve\u2019s Bracket",
-      "total": 12,
-      "round_scores": [
-        12,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 136,
-      "possible_points": 188
-    },
-    {
       "entry_name": "LukeHeff",
-      "total": 12,
+      "total": 27,
       "round_scores": [
-        12,
+        27,
         0,
         0,
         0,
@@ -54,13 +12,13 @@
         0
       ],
       "tiebreaker": 153,
-      "possible_points": 188
+      "possible_points": 187
     },
     {
       "entry_name": "I Still Don't Know Nothing",
-      "total": 12,
+      "total": 26,
       "round_scores": [
-        12,
+        26,
         0,
         0,
         0,
@@ -68,13 +26,41 @@
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 188
+      "possible_points": 186
+    },
+    {
+      "entry_name": "Riff Ram Bah Zoo",
+      "total": 25,
+      "round_scores": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tiebreaker": 133,
+      "possible_points": 185
+    },
+    {
+      "entry_name": "Steve\u2019s Bracket",
+      "total": 25,
+      "round_scores": [
+        25,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tiebreaker": 136,
+      "possible_points": 185
     },
     {
       "entry_name": "AngieAW",
-      "total": 11,
+      "total": 25,
       "round_scores": [
-        11,
+        25,
         0,
         0,
         0,
@@ -82,27 +68,13 @@
         0
       ],
       "tiebreaker": 143,
-      "possible_points": 187
-    },
-    {
-      "entry_name": "It's Giving Upset",
-      "total": 11,
-      "round_scores": [
-        11,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 151,
-      "possible_points": 187
+      "possible_points": 185
     },
     {
       "entry_name": "Kim Williamson",
-      "total": 10,
+      "total": 24,
       "round_scores": [
-        10,
+        24,
         0,
         0,
         0,
@@ -110,13 +82,27 @@
         0
       ],
       "tiebreaker": 141,
-      "possible_points": 186
+      "possible_points": 184
+    },
+    {
+      "entry_name": "Lousy Smarch Madness",
+      "total": 23,
+      "round_scores": [
+        23,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tiebreaker": 128,
+      "possible_points": 183
     },
     {
       "entry_name": "Mike Dupuis",
-      "total": 10,
+      "total": 23,
       "round_scores": [
-        10,
+        23,
         0,
         0,
         0,
@@ -124,13 +110,13 @@
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 186
+      "possible_points": 183
     },
     {
       "entry_name": "KCurry",
-      "total": 9,
+      "total": 22,
       "round_scores": [
-        9,
+        22,
         0,
         0,
         0,
@@ -138,13 +124,27 @@
         0
       ],
       "tiebreaker": 158,
-      "possible_points": 185
+      "possible_points": 182
+    },
+    {
+      "entry_name": "It's Giving Upset",
+      "total": 17,
+      "round_scores": [
+        17,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tiebreaker": 151,
+      "possible_points": 177
     },
     {
       "entry_name": "AWilliamson SS",
-      "total": 5,
+      "total": 15,
       "round_scores": [
-        5,
+        15,
         0,
         0,
         0,
@@ -152,8 +152,8 @@
         0
       ],
       "tiebreaker": 155,
-      "possible_points": 181
+      "possible_points": 175
     }
   ],
-  "last_updated": "2026-03-20T09:06:00.715125"
+  "last_updated": "2026-03-21T09:33:53.346790"
 }

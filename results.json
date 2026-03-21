@@ -95,7 +95,103 @@
       "team1": "Georgia",
       "team2": "Saint Louis",
       "entered_at": "2026-03-20T08:54:55.541621"
+    },
+    "East-R0-M2": {
+      "winner": "St. John's",
+      "team1": "St. John's",
+      "team2": "N. Iowa",
+      "entered_at": "2026-03-21T09:31:58.741575"
+    },
+    "East-R0-M3": {
+      "winner": "Kansas",
+      "team1": "Kansas",
+      "team2": "Cal Baptist",
+      "entered_at": "2026-03-21T09:32:00.870513"
+    },
+    "East-R0-M6": {
+      "winner": "UCLA",
+      "team1": "UCLA",
+      "team2": "UCF",
+      "entered_at": "2026-03-21T09:32:10.780403"
+    },
+    "East-R0-M7": {
+      "winner": "UConn",
+      "team1": "UConn",
+      "team2": "Furman",
+      "entered_at": "2026-03-21T09:32:12.640497"
+    },
+    "South-R0-M0": {
+      "winner": "Florida",
+      "team1": "Florida",
+      "team2": "PVAM/LEH",
+      "entered_at": "2026-03-21T09:32:27.711849"
+    },
+    "South-R0-M1": {
+      "winner": "Iowa",
+      "team1": "Clemson",
+      "team2": "Iowa",
+      "entered_at": "2026-03-21T09:32:32.083671"
+    },
+    "West-R0-M0": {
+      "winner": "Arizona",
+      "team1": "Arizona",
+      "team2": "LIU",
+      "entered_at": "2026-03-21T09:32:55.628068"
+    },
+    "West-R0-M1": {
+      "winner": "Utah St",
+      "team1": "Villanova",
+      "team2": "Utah St",
+      "entered_at": "2026-03-21T09:32:59.353729"
+    },
+    "West-R0-M6": {
+      "winner": "Miami",
+      "team1": "Miami",
+      "team2": "Missouri",
+      "entered_at": "2026-03-21T09:33:09.596794"
+    },
+    "West-R0-M7": {
+      "winner": "Purdue",
+      "team1": "Purdue",
+      "team2": "Queens",
+      "entered_at": "2026-03-21T09:33:11.476422"
+    },
+    "Midwest-R0-M2": {
+      "winner": "Texas Tech",
+      "team1": "Texas Tech",
+      "team2": "Akron",
+      "entered_at": "2026-03-21T09:33:24.989487"
+    },
+    "Midwest-R0-M3": {
+      "winner": "Alabama",
+      "team1": "Alabama",
+      "team2": "Hofstra",
+      "entered_at": "2026-03-21T09:33:25.844970"
+    },
+    "Midwest-R0-M4": {
+      "winner": "Tennessee",
+      "team1": "Tennessee",
+      "team2": "M-OH/SMU",
+      "entered_at": "2026-03-21T09:33:28.219450"
+    },
+    "Midwest-R0-M5": {
+      "winner": "Virginia",
+      "team1": "Virginia",
+      "team2": "Wright St",
+      "entered_at": "2026-03-21T09:33:29.610862"
+    },
+    "Midwest-R0-M6": {
+      "winner": "Kentucky",
+      "team1": "Kentucky",
+      "team2": "Santa Clara",
+      "entered_at": "2026-03-21T09:33:32.673937"
+    },
+    "Midwest-R0-M7": {
+      "winner": "Iowa St",
+      "team1": "Iowa St",
+      "team2": "Tennessee St",
+      "entered_at": "2026-03-21T09:33:34.027540"
     }
   },
-  "last_updated": "2026-03-20T08:55:08.072985"
+  "last_updated": "2026-03-21T09:33:37.644361"
 }
