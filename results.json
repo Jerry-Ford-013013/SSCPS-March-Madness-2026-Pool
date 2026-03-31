@@ -335,7 +335,31 @@
       "team1": "Tex/NCST",
       "team2": "Purdue",
       "entered_at": "2026-03-28T09:52:02.609323"
+    },
+    "East-R3-M0": {
+      "winner": "UConn",
+      "team1": "Duke",
+      "team2": "UConn",
+      "entered_at": "2026-03-31T17:35:51.031124"
+    },
+    "West-R3-M0": {
+      "winner": "Arizona",
+      "team1": "Arizona",
+      "team2": "Purdue",
+      "entered_at": "2026-03-31T17:36:00.501860"
+    },
+    "South-R3-M0": {
+      "winner": "Illinois",
+      "team1": "Iowa",
+      "team2": "Illinois",
+      "entered_at": "2026-03-31T17:36:05.742399"
+    },
+    "Midwest-R3-M0": {
+      "winner": "Michigan",
+      "team1": "Michigan",
+      "team2": "Tennessee",
+      "entered_at": "2026-03-31T17:36:13.713290"
     }
   },
-  "last_updated": "2026-03-28T09:52:05.218952"
+  "last_updated": "2026-03-31T17:36:16.037097"
 }

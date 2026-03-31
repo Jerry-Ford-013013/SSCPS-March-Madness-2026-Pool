@@ -1,60 +1,88 @@
 {
   "entries": [
     {
-      "entry_name": "Lousy Smarch Madness",
-      "total": 67,
-      "round_scores": [
-        23,
-        20,
-        24,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 128,
-      "possible_points": 163
-    },
-    {
-      "entry_name": "AngieAW",
-      "total": 67,
-      "round_scores": [
-        25,
-        22,
-        20,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 143,
-      "possible_points": 163
-    },
-    {
       "entry_name": "LukeHeff",
-      "total": 65,
+      "total": 81,
       "round_scores": [
         27,
         26,
         12,
-        0,
+        16,
         0,
         0
       ],
       "tiebreaker": 153,
-      "possible_points": 161
+      "possible_points": 145
+    },
+    {
+      "entry_name": "Lousy Smarch Madness",
+      "total": 75,
+      "round_scores": [
+        23,
+        20,
+        24,
+        8,
+        0,
+        0
+      ],
+      "tiebreaker": 128,
+      "possible_points": 139
+    },
+    {
+      "entry_name": "AngieAW",
+      "total": 75,
+      "round_scores": [
+        25,
+        22,
+        20,
+        8,
+        0,
+        0
+      ],
+      "tiebreaker": 143,
+      "possible_points": 139
     },
     {
       "entry_name": "Riff Ram Bah Zoo",
-      "total": 63,
+      "total": 71,
       "round_scores": [
         25,
         22,
         16,
-        0,
+        8,
         0,
         0
       ],
       "tiebreaker": 133,
-      "possible_points": 159
+      "possible_points": 135
+    },
+    {
+      "entry_name": "Steve\u2019s Bracket",
+      "total": 69,
+      "round_scores": [
+        25,
+        20,
+        8,
+        16,
+        0,
+        0
+      ],
+      "tiebreaker": 136,
+      "possible_points": 133
+    },
+    {
+      "entry_name": "Kim Williamson",
+      "total": 68,
+      "round_scores": [
+        24,
+        12,
+        16,
+        16,
+        0,
+        0
+      ],
+      "tiebreaker": 141,
+      "possible_points": 132
     },
     {
       "entry_name": "Mike Dupuis",
@@ -68,77 +96,49 @@
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 159
+      "possible_points": 127
     },
     {
       "entry_name": "KCurry",
-      "total": 54,
+      "total": 62,
       "round_scores": [
         22,
         16,
         16,
-        0,
+        8,
         0,
         0
       ],
       "tiebreaker": 158,
-      "possible_points": 150
+      "possible_points": 126
     },
     {
       "entry_name": "I Still Don't Know Nothing",
-      "total": 54,
+      "total": 62,
       "round_scores": [
         26,
         16,
         12,
-        0,
+        8,
         0,
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 150
-    },
-    {
-      "entry_name": "Steve\u2019s Bracket",
-      "total": 53,
-      "round_scores": [
-        25,
-        20,
-        8,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 136,
-      "possible_points": 149
-    },
-    {
-      "entry_name": "Kim Williamson",
-      "total": 52,
-      "round_scores": [
-        24,
-        12,
-        16,
-        0,
-        0,
-        0
-      ],
-      "tiebreaker": 141,
-      "possible_points": 148
+      "possible_points": 126
     },
     {
       "entry_name": "AWilliamson SS",
-      "total": 39,
+      "total": 47,
       "round_scores": [
         15,
         12,
         12,
-        0,
+        8,
         0,
         0
       ],
       "tiebreaker": 155,
-      "possible_points": 135
+      "possible_points": 111
     },
     {
       "entry_name": "It's Giving Upset",
@@ -152,8 +152,8 @@
         0
       ],
       "tiebreaker": 151,
-      "possible_points": 123
+      "possible_points": 91
     }
   ],
-  "last_updated": "2026-03-28T09:52:07.647582"
+  "last_updated": "2026-03-31T17:36:18.400272"
 }
