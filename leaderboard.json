@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "entry_name": "KCurry",
+      "total": 110,
+      "round_scores": [
+        22,
+        16,
+        16,
+        8,
+        16,
+        32
+      ],
+      "tiebreaker": 158,
+      "possible_points": 110
+    },
+    {
       "entry_name": "Riff Ram Bah Zoo",
       "total": 87,
       "round_scores": [
@@ -12,7 +26,7 @@
         0
       ],
       "tiebreaker": 133,
-      "possible_points": 119
+      "possible_points": 87
     },
     {
       "entry_name": "Kim Williamson",
@@ -26,7 +40,7 @@
         0
       ],
       "tiebreaker": 141,
-      "possible_points": 116
+      "possible_points": 84
     },
     {
       "entry_name": "LukeHeff",
@@ -40,21 +54,7 @@
         0
       ],
       "tiebreaker": 153,
-      "possible_points": 113
-    },
-    {
-      "entry_name": "KCurry",
-      "total": 78,
-      "round_scores": [
-        22,
-        16,
-        16,
-        8,
-        16,
-        0
-      ],
-      "tiebreaker": 158,
-      "possible_points": 110
+      "possible_points": 81
     },
     {
       "entry_name": "Lousy Smarch Madness",
@@ -68,7 +68,7 @@
         0
       ],
       "tiebreaker": 128,
-      "possible_points": 107
+      "possible_points": 75
     },
     {
       "entry_name": "AngieAW",
@@ -82,7 +82,7 @@
         0
       ],
       "tiebreaker": 143,
-      "possible_points": 107
+      "possible_points": 75
     },
     {
       "entry_name": "Steve\u2019s Bracket",
@@ -96,7 +96,7 @@
         0
       ],
       "tiebreaker": 136,
-      "possible_points": 101
+      "possible_points": 69
     },
     {
       "entry_name": "AWilliamson SS",
@@ -110,7 +110,7 @@
         0
       ],
       "tiebreaker": 155,
-      "possible_points": 95
+      "possible_points": 63
     },
     {
       "entry_name": "Mike Dupuis",
@@ -124,7 +124,7 @@
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 95
+      "possible_points": 63
     },
     {
       "entry_name": "I Still Don't Know Nothing",
@@ -138,7 +138,7 @@
         0
       ],
       "tiebreaker": 164,
-      "possible_points": 94
+      "possible_points": 62
     },
     {
       "entry_name": "It's Giving Upset",
@@ -152,8 +152,8 @@
         0
       ],
       "tiebreaker": 151,
-      "possible_points": 59
+      "possible_points": 27
     }
   ],
-  "last_updated": "2026-04-05T11:25:42.700213"
+  "last_updated": "2026-04-07T07:20:06.389984"
 }
